@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
+        image: 015162308185.dkr.ecr.us-west-2.amazonaws.com/abalone:latestmodel
         ports:
-        - containerPort: 80
+        - containerPort: 8080
