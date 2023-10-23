@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: model-deployment
   labels:
-    app: nginx
+    app: model
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: model
   template:
     metadata:
       labels:
-        app: nginx
+        app: model
     spec:
       containers:
-      - name: nginx
+      - name: model
         image: 015162308185.dkr.ecr.us-west-2.amazonaws.com/abalone:latestmodel
         ports:
         - containerPort: 8080
