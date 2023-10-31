@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: model
-        image: 015162308185.dkr.ecr.us-west-2.amazonaws.com/abalone:dafc54bf-92e1-4471-8dc5-4770fb769f03
+        image: 015162308185.dkr.ecr.us-west-2.amazonaws.com/abalone:f34a5c18-2bc8-449d-8d87-69d660765f6d
         ports:
         - containerPort: 8080
